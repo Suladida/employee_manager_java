@@ -10,4 +10,8 @@ public class Developer extends Employee {
         super(name, niNumber, salary);
     }
 
+    @Override
+    public double getBonus() {
+        return (salary * 0.01);
+    }
 }

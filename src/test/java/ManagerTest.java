@@ -32,7 +32,7 @@ public class ManagerTest {
 
     @Test
     public void canGetBonus(){
-        assertEquals(10.0, manager.getBonus(), 0.1);
+        assertEquals(1.0, manager.getBonus(), 0.1);
     }
 
 }

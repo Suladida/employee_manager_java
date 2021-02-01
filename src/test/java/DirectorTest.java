@@ -25,6 +25,12 @@ public class DirectorTest {
     }
 
     @Test
+    public void directorCannotChangeName(){
+        director.changeName("");
+        assertEquals("DirectorDude", director.getName());
+    }
+
+    @Test
     public void directorHasNINumber(){
         assertEquals("DIRE12345", director.getNINumber());
     }
@@ -58,7 +64,7 @@ public class DirectorTest {
 
     @Test
     public void canGetBonus(){
-        assertEquals(100000, director.getBonus(), 0.1);
+        assertEquals(20000, director.getBonus(), 0.1);
     }
 
 }
