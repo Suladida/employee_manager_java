@@ -26,7 +26,8 @@ public class Employee {
     }
 
     public double raiseSalary(Double raise){
-        salary = salary + raise;
+        if(raise > 0){
+        salary = salary + raise; }
         return salary;
     }
 
