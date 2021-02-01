@@ -10,12 +10,17 @@ public class ManagerTest {
 
     @Before
     public void Manager(){
-        manager = new Manager("John", "GFR234564", 20000, "Admin");
+        manager = new Manager("John", "GFR234564", 100, "Admin");
     }
 
     @Test
     public void hasDeptName(){
         assertEquals("Admin", manager.getDeptName());
+    }
+
+    @Test
+    public void canGetBonus(){
+        assertEquals(10.0, manager.payBonus(), 0.1);
     }
 
 }

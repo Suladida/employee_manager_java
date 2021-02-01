@@ -4,16 +4,16 @@ import staff.Employee;
 
 public class Manager extends Employee {
 
-    private String name;
-    private String niNumber;
-    private int salary;
     private String deptName;
+    String name;
+    String niNumber;
+    int salary;
 
     public Manager(String name, String niNumber, int salary, String deptName){
-        super("Trixie", "TRX20595B", 100000);
-//        this.name = name;
-//        this.niNumber = niNumber;
-//        this.salary = salary;
+        super("Trixie", "TRX20595B", 100);
+        this.name = name;
+        this.niNumber = niNumber;
+        this.salary = salary;
         this.deptName = "Admin";
     }
 
