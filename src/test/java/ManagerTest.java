@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import staff.mangement.Manager;
+import staff.Employee;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,12 +11,17 @@ public class ManagerTest {
 
     @Before
     public void Manager(){
-        manager = new Manager("John", "GFR234564", 100, "Admin");
+        manager = new Manager("John", "GFR234564", 100, "Engineering");
+    }
+
+    @Test
+    public void hasName(){
+        assertEquals("John", manager.getName());
     }
 
     @Test
     public void hasDeptName(){
-        assertEquals("Admin", manager.getDeptName());
+        assertEquals("Engineering", manager.getDeptName());
     }
 
     @Test

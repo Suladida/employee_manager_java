@@ -1,10 +1,11 @@
 package staff;
 
-public abstract class Employee {
+public class Employee {
 
     private String name;
     private String niNumber;
     private double salary;
+    Employee employee;
 
     public Employee(String name, String niNumber, double salary){
         this.name = name;
