@@ -10,7 +10,7 @@ public class ManagerTest {
     Manager manager;
 
     @Before
-    public void Manager(){
+    public void before(){
         manager = new Manager("John", "GFR234564", 100, "Engineering");
     }
 
@@ -32,7 +32,7 @@ public class ManagerTest {
 
     @Test
     public void canGetBonus(){
-        assertEquals(10.0, manager.payBonus(), 0.1);
+        assertEquals(10.0, manager.getBonus(), 0.1);
     }
 
 }
