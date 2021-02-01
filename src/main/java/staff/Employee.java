@@ -17,6 +17,10 @@ public class Employee {
         return name;
     }
 
+    public void changeName(String newName){
+        name = newName;
+    }
+
     public String getNINumber(){
         return niNumber;
     }
