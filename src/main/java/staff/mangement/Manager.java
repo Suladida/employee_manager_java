@@ -15,9 +15,4 @@ public class Manager extends Employee {
     public String getDeptName(){
         return deptName;
     }
-
-    public double getBonus(){
-        return (salary * 0.01);
-    }
-
 }
